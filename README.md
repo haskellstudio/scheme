@@ -1,4 +1,3 @@
-ï»¿
 
 
 
@@ -26,29 +25,30 @@
 
 
 
-è¿™æ˜¯æ¯”è¾ƒæ¥è¿‘ç‹å åŸå§‹ä»£ç çš„ä¸€ä¸ªç‰ˆæœ¬ã€‚å®ƒçš„ä»£ç ç»å¸¸ä¼šlost in the futureï¼Œæ‰€ä»¥æˆ‘forkäº†ä¸€ä»½ã€‚
 
-ç‹å çš„æ”¾å‡ºæ¥çš„ä»£ç æ˜¯è¿è¡Œä¸äº†çš„ï¼Œæ‰€ä»¥è¿™é‡Œè¡¥å…¨äº†ä¸€äº›ä¸œè¥¿ï¼Œè®©å®ƒèƒ½å¤Ÿè¿è¡Œã€‚
+ÕâÊÇ±È½Ï½Ó½üÍõÛóÔ­Ê¼´úÂëµÄÒ»¸ö°æ±¾¡£ËüµÄ´úÂë¾­³£»álost in the future£¬ËùÒÔÎÒforkÁËÒ»·İ¡£
 
-è¿™äº›è¡¥å…¨éƒ½æ˜¯ä»ç½‘ä¸Šæ”¶é›†çš„ã€‚ç›¸å…³ç‰ˆæƒçš„éƒ½å±äºå„è‡ªåŸå§‹å‡ºå¤„ã€‚
+ÍõÛóµÄ·Å³öÀ´µÄ´úÂëÊÇÔËĞĞ²»ÁËµÄ£¬ËùÒÔÕâÀï²¹È«ÁËÒ»Ğ©¶«Î÷£¬ÈÃËüÄÜ¹»ÔËĞĞ¡£
 
-æ–‡æ¡£æ¥è‡ªäº[è¿™é‡Œ](https://github.com/spiritbear/Grad-School-Code)ï¼Œæ ¹æ®ä»£ç æ¥æ¨æµ‹ï¼Œä½œè€…å¯èƒ½å½“æ—¶è·Ÿç‹å åŒç­ã€‚
+ÕâĞ©²¹È«¶¼ÊÇ´ÓÍøÉÏÊÕ¼¯µÄ¡£Ïà¹Ø°æÈ¨µÄ¶¼ÊôÓÚ¸÷×ÔÔ­Ê¼³ö´¦¡£
 
-P423æ˜¯Indianaå¤§å­¦ç‹å å½“æ—¶é€‰çš„ç¼–è¯‘å™¨çš„è¯¾ç¨‹ï¼Œ[è¿™é‡Œ](https://github.com/srwaggon/p423)å’Œ[è¿™é‡Œ](https://github.com/keyanzhang/p423-compiler)éƒ½èƒ½æ‰¾åˆ°ä¸€äº›è¯¾ç¨‹çš„ä»£ç ã€‚
+ÎÄµµÀ´×ÔÓÚ[ÕâÀï](https://github.com/spiritbear/Grad-School-Code)£¬¸ù¾İ´úÂëÀ´ÍÆ²â£¬×÷Õß¿ÉÄÜµ±Ê±¸úÍõÛóÍ¬°à¡£
 
-è¿™é‡Œæœ‰éƒ¨åˆ†æˆ‘ç¿»è¯‘æˆ[ä¸­æ–‡çš„èµ„æ–™](http://zenlife.tk/nanopass0.md)ã€‚
+P423ÊÇIndiana´óÑ§ÍõÛóµ±Ê±Ñ¡µÄ±àÒëÆ÷µÄ¿Î³Ì£¬[ÕâÀï](https://github.com/srwaggon/p423)ºÍ[ÕâÀï](https://github.com/keyanzhang/p423-compiler)¶¼ÄÜÕÒµ½Ò»Ğ©¿Î³ÌµÄ´úÂë¡£
+
+ÕâÀïÓĞ²¿·ÖÎÒ·­Òë³É[ÖĞÎÄµÄ×ÊÁÏ](http://zenlife.tk/nanopass0.md)¡£
 
 
-# è¿è¡Œ
+# ÔËĞĞ
 
-[chez scheme](http://www.scheme.com/)æœ‰ä¸€ä¸ªå…è´¹çš„è§£é‡Šå™¨ç‰ˆæœ¬petiteï¼Œå»æ‰¾åˆ°å¹¶ä¸‹è½½ã€‚
+[chez scheme](http://www.scheme.com/)ÓĞÒ»¸öÃâ·ÑµÄ½âÊÍÆ÷°æ±¾petite£¬È¥ÕÒµ½²¢ÏÂÔØ¡£
 
     cd yscheme
     petite
     (load "compiler.ss")
     (test-one '(lambda (x) (+ x 1)))
 
-å¯ä»¥çœ‹åˆ°æœ€åçš„è¾“å‡ºï¼š
+¿ÉÒÔ¿´µ½×îºóµÄÊä³ö£º
 
     generate-x86-64:
         .globl _scheme_entry
@@ -83,13 +83,13 @@ P423æ˜¯Indianaå¤§å­¦ç‹å å½“æ—¶é€‰çš„ç¼–è¯‘å™¨çš„è¯¾ç¨‹ï¼Œ[è¿™é‡Œ](https://gith
         popq %rbx
         ret
 
-è‡ªå·±æµ‹è¯•å¯ä»¥è¿è¡Œå¯ä»¥è°ƒç”¨test-oneå‡½æ•°ã€‚æœ‰ä¸€äº›å‚æ•°æ˜¯å¯ä»¥è®¾ç½®çš„ï¼Œæ¯”å¦‚ï¼š
+×Ô¼º²âÊÔ¿ÉÒÔÔËĞĞ¿ÉÒÔµ÷ÓÃtest-oneº¯Êı¡£ÓĞÒ»Ğ©²ÎÊıÊÇ¿ÉÒÔÉèÖÃµÄ£¬±ÈÈç£º
 
-    (tracer #f) å…³é—­ä¸­é—´è¿‡ç¨‹çš„è¾“å‡º
-    (compiler-passes '(<spec> ...)) è®¾ç½®è¿è¡Œçš„pass
-    (test-one '<program>) æµ‹è¯•ä¸€æ®µä»£ç 
+    (tracer #f) ¹Ø±ÕÖĞ¼ä¹ı³ÌµÄÊä³ö
+    (compiler-passes '(<spec> ...)) ÉèÖÃÔËĞĞµÄpass
+    (test-one '<program>) ²âÊÔÒ»¶Î´úÂë
 
-å…·ä½“çš„å¯ä»¥å»çœ‹driver.ssæ–‡ä»¶
+¾ßÌåµÄ¿ÉÒÔÈ¥¿´driver.ssÎÄ¼ş
 
 -----------------------------------
 
@@ -155,7 +155,7 @@ git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/haskellstudio/scheme.git
 git push -u origin master
-â€¦or push an existing repository from the command line
+¡­or push an existing repository from the command line
 git remote add origin https://github.com/haskellstudio/scheme.git
 git push -u origin master
 
