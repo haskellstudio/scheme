@@ -3697,12 +3697,12 @@
 
 
 #|
-;   "Chez Scheme 9.5/bin/ta6nt/scheme.exe"
+; "Chez Scheme 9.5/bin/ta6nt/scheme.exe"
 (load "compiler.ss")
 (tracer #t)
 (trusted-passes #t)
 (test-one (list-ref tests 0))
-
+;  (test-one '(lambda (x) (+ x 1)))
 
 
 
@@ -3711,10 +3711,12 @@
 
 (define driver
 	(lambda (program)
+		(begin 
+		(delete-file "t.s")
 		(with-output-to-file "t.s"
 			(lambda()
 				(printf "~a~n" 
-					(parse-scheme program))))))(driver '(lambda (x) (+ x 1)))
+					(parse-scheme program)))))))(driver '(lambda (x) (+ x 1))) 22
 
 
 
@@ -3724,6 +3726,7 @@
 
 
 
+;; some test 
  (with-output-to-file "t.s"
 	(lambda ()
 		(printf "111")))))
