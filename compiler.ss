@@ -3703,4 +3703,35 @@
 (trusted-passes #t)
 (test-one (list-ref tests 0))
 
+
+
+
+
+(load "compiler.ss")
+
+(define driver
+	(lambda (program)
+		(with-output-to-file "t.s"
+			(lambda()
+				(printf "~a~n" 
+					(parse-scheme program))))))(driver '(lambda (x) (+ x 1)))
+
+
+
+
+
+
+
+
+
+ (with-output-to-file "t.s"
+	(lambda ()
+		(printf "111")))))
+
+(with-output-to-file "t.s"
+	 (lambda()
+		(printf "~a~n" 
+			(parse-scheme '(lambda (x) (+ x 1))))))
+
+
 |#
