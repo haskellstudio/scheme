@@ -164,6 +164,6 @@ git commit -m "msg"
 git.exe fetch -v --progress "origin"
 git.exe pull --progress -v --no-rebase "origin" master --allow-unrelated-histories
 git.exe push --progress "origin" master
-
+git     push --set-upstream origin master
 git.exe clean -n  -d  -fx
 git.exe clean -d  -fx
