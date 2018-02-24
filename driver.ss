@@ -578,7 +578,9 @@
                       pass-name t (force answer))))))))
       (define run-pass
         (lambda (input-expr pass-name)
-          (when (memq pass-name (tracer)) (printf "~%~s:~%" pass-name))
+		 ;test
+         ; (when (memq pass-name (tracer)) (printf "~%~s:~%" pass-name))
+		  (when (memq pass-name (tracer)) (printf "~%~%" ))
           (let ([pass (eval pass-name)])
             (case pass-name
               [(generate-x86-64)
@@ -616,7 +618,7 @@
                             (pretty-print input-expr)))
                         (if (memq pass-name (timed-passes))
                             (begin
-                              (printf "~s: " pass-name)
+                              ;(printf "~s: " pass-name)
                               (flush-output-port)
                               (let-values ([(v t) (time-it (pass input-expr))])
                                 (printf "~a\n" t)

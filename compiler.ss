@@ -1107,7 +1107,7 @@
         [(number? m) `(* ,(sra m shift-fixnum) ,n)]
         [(number? n) `(* ,(sra n shift-fixnum) ,m)]
         [else `(* (sra ,m ,shift-fixnum) ,n)])]
-
+   #| |#
       ; pairs
       [(cons ,[e1] ,[e2])
        (let* ([offset-car (- disp-car tag-pair)]
@@ -3700,15 +3700,42 @@
 ; "Chez Scheme 9.5/bin/ta6nt/scheme.exe"
 (load "compiler.ss")
 (tracer #t)
+(tracer '(generate-x86-64))
 (trusted-passes #t)
-(test-one (list-ref tests 0))
-;  (test-one '(lambda (x) (+ x 1)))
+(begin 
+		(delete-file "t.s")
+		(with-output-to-file "t.s"
+			(lambda()
+				(printf "~a~n" 
+					 (test-one '(+ 1 2) #f #f )))))
+;
+
+
+(test-one (list-ref tests 1) )
+;
+
+  
+
+
+
+(load "compiler.ss")
+(tracer #t)
+(tracer '(generate-x86-64))
+(trusted-passes #t)
+(begin 
+		(delete-file "t.s")
+		(with-output-to-file "t.s"
+			(lambda()
+				(printf "~a~n" 
+					 (test-one '(lambda (x) (+ x 1)))))))
+;
+
 
 
 
 
 (load "compiler.ss")
-
+(tracer #t)
 (define driver
 	(lambda (program)
 		(begin 
@@ -3716,7 +3743,7 @@
 		(with-output-to-file "t.s"
 			(lambda()
 				(printf "~a~n" 
-					(parse-scheme program)))))))(driver '(lambda (x) (+ x 1))) 22
+					(parse-scheme program)))))))(driver '(lambda (x) (+ x 1))) 
 
 
 
