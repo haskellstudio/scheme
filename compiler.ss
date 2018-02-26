@@ -3712,6 +3712,7 @@
 
 
 (test-one (list-ref tests 1) )
+(test-one (list-ref invalid-tests 1) )
 ;
 
   
